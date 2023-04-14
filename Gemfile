@@ -11,3 +11,4 @@ gem "sinatra-contrib"
 group :development do # перечень гемов, которые  нужны только для разработки и не заливаются на хостинг
 	gem "tux"
 end
+gem "rake", "~> 13.0"

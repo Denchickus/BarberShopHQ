@@ -4,11 +4,17 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/activerecord'
 
-set :database, "sqlite3:barbershop.db" # подключение к БД
+# set :database, "sqlite3:barbershop.db" # подключение к БД
+
+set :database, {adapter: "sqlite3", database: "barbershop.db"} # подключение к БД
 
 # Миграция - очередная версия базы данных
 
 class Client < ActiveRecord::Base
+	
+end
+
+class Barber < ActiveRecord::Base
 	
 end
 
