@@ -6,6 +6,8 @@ require 'sinatra/activerecord'
 
 set :database, "sqlite3:barbershop.db" # подключение к БД
 
+# Миграция - очередная версия базы данных
+
 class Client < ActiveRecord::Base
 	
 end
